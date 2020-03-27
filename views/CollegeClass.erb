@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title></title>
+        </head>
+        <body>
+            <p>class id: <%= @CollegeClass.id %></p>
+            <p>name: <%= @CollegeClass.name %></p>
+            <p>intructor: <%= @CollegeClass.email %></p>
+            <p>students:</p>
+            <ul>
+                <%= s = @CollegeClass.student %>
+                <%= s.each do |r| %>
+                <li><%= r.name %></li>
+                <%= end %>
+            </ul>
+        </body>
+    </html>
